@@ -55,21 +55,21 @@ clash-cli proxies
 clash-cli switch <代理组名> <节点名>
 
 # 示例
-clash-cli switch "🔰 选择节点" "🇭🇰 香港A01"
-clash-cli switch "Proxy" "HK-Node-01"
+clash-cli switch "Proxy" "🇭🇰 香港 01"
+clash-cli switch "Streaming" "🇯🇵 日本 03"
 ```
 
 ### 测试节点延迟
 
 ```bash
 # 测试单个节点
-clash-cli delay "🇭🇰 香港A01"
+clash-cli delay "🇭🇰 香港 01"
 
 # 自定义测速 URL 和超时时间
-clash-cli delay "🇭🇰 香港A01" --url https://www.gstatic.com/generate_204 --timeout 5000
+clash-cli delay "🇭🇰 香港 01" --url https://www.gstatic.com/generate_204 --timeout 5000
 
 # 测试整个代理组
-clash-cli delay-group "🔰 选择节点"
+clash-cli delay-group "Proxy"
 ```
 
 ### 查看当前活动节点
@@ -79,7 +79,7 @@ clash-cli delay-group "🔰 选择节点"
 clash-cli current
 
 # 查看指定代理组
-clash-cli current "🔰 选择节点"
+clash-cli current "Proxy"
 ```
 
 ### 连接远程 Clash
